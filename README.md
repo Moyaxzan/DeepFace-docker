@@ -1,4 +1,4 @@
-# face-docker
+# DeepFace-docker
 
 ## Lancer
     docker compose run --rm face
@@ -33,4 +33,3 @@ Détecteurs : opencv (défaut), retinaface, mtcnn, ssd...
 ## Note sur le pourcentage
 C'est un score dérivé de la distance (distance = seuil -> 50 %), pas une probabilité.
 Le verdict officiel est basé sur le seuil du modèle.
-# DeepFace-docker
