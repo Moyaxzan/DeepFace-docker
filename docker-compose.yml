@@ -1,0 +1,9 @@
+services:
+  face:
+    build: .
+    volumes:
+      - ./data:/data              # tes photos
+      - ./weights:/root/.deepface # cache des modèles (évite de les re-télécharger)
+    environment:
+      - MODEL=${MODEL:-VGG-Face}
+      - DETECTOR=${DETECTOR:-opencv}
